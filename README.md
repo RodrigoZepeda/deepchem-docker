@@ -6,11 +6,7 @@ To run model please [install docker](https://docs.docker.com/install/linux/docke
 and then:
 
 ```
-docker run -it rodrigozepeda/deepchem-docker
+docker run -it rodrigozepeda/deepchem-docker:v1 /bin/bash
 ```
 
-afterwards you can type `python` and start playing with deepchem or you can use:
-```
-SET COMMAND
-```
-to open Jupyter notebooks and use deepchem.
+afterwards you can type `python` and start playing with deepchem.
