@@ -6,7 +6,7 @@
 FROM continuumio/miniconda3:4.6.14
 
 #Create environment in 3.6.6 (same as my ubuntu)
-RUN yes "yes" | conda create -n env --no-deps python=3.6.6  && \
+RUN yes "yes" | conda create -n env --no-default-packages python=3.6.6  && \
     echo "source activate env" > ~/.bashrc && \
     yes "yes" | conda install -n env -c deepchem -c rdkit -c conda-forge -c omnia deepchem=2.1.0 && \
     yes "yes" | conda clean --all
